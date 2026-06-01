@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Profile avatar</title>
+  <desc id="desc">A simple profile avatar for the homepage.</desc>
+  <rect width="320" height="320" fill="#f5f0e8"/>
+  <circle cx="160" cy="148" r="84" fill="#fdfdf9"/>
+  <circle cx="128" cy="45" r="17" fill="#5fd064" stroke="#12221d" stroke-width="7"/>
+  <circle cx="179" cy="42" r="18" fill="#5fd064" stroke="#12221d" stroke-width="7"/>
+  <path d="M146 69c3-20 22-33 49-29" fill="none" stroke="#12221d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M165 60c-7-17-24-26-51-24" fill="none" stroke="#12221d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M81 299c11-58 45-89 82-89s71 31 82 89z" fill="#62a243" stroke="#12221d" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M122 232l27 34 26-35" fill="none" stroke="#fdfdf9" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="160" cy="141" r="67" fill="#fdf1dd" stroke="#12221d" stroke-width="8"/>
+  <path d="M98 135c12-43 44-63 82-58 32 4 53 26 60 60-22-7-38-19-51-37-18 22-47 34-91 35z" fill="#111" stroke="#12221d" stroke-width="8" stroke-linejoin="round"/>
+  <circle cx="133" cy="151" r="7" fill="#12221d"/>
+  <circle cx="187" cy="151" r="7" fill="#12221d"/>
+  <path d="M148 181c12 8 25 8 37 0" fill="none" stroke="#12221d" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="103" cy="166" r="19" fill="#fdf1dd" stroke="#12221d" stroke-width="8"/>
+  <circle cx="217" cy="166" r="19" fill="#fdf1dd" stroke="#12221d" stroke-width="8"/>
+  <path d="M64 292h192" stroke="#12221d" stroke-width="8" stroke-linecap="round"/>
+</svg>

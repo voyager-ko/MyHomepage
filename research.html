@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research | MyHomepage</title>
+    <meta name="description" content="研究テーマ、研究内容、論文、学会発表をまとめたページです。" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-sidebar" id="site-header">
+        <a class="brand" href="index.html" aria-label="About Me">
+          <img class="avatar" src="assets/avatar.svg" alt="" />
+          <span class="brand__name">山井　航</span>
+          <span class="brand__note">About Me / Research / Projects</span>
+        </a>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">メニューを開閉</span>
+        </button>
+
+        <nav class="global-nav" id="global-nav" aria-label="メインメニュー">
+          <a class="nav-link" href="index.html">
+            <span class="nav-icon" aria-hidden="true">◎</span>
+            <span>About Me</span>
+          </a>
+          <a class="nav-link is-active" href="research.html" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">△</span>
+            <span>Research</span>
+          </a>
+          <a class="nav-link" href="projects.html">
+            <span class="nav-icon" aria-hidden="true">◇</span>
+            <span>My Project</span>
+          </a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+          <span>Dark</span>
+        </button>
+      </header>
+
+      <main class="main-content" id="top">
+        <article class="page-panel">
+          <header class="page-title">
+            <p class="eyebrow">Research</p>
+            <h1>研究内容</h1>
+            <p>
+              学部時代の研究と現在取り組んでいる大学院の研究内容を紹介しています。
+            </p>
+          </header>
+
+          <section class="section-block research-choice-section">
+            <div class="research-accordion-list">
+              <details class="research-accordion" id="undergraduate-research">
+                <summary>
+                  <span>
+                    <span class="research-accordion__label">Undergraduate Research</span>
+                    <span class="research-accordion__title">学部時代の研究</span>
+                  </span>
+                  <span class="research-accordion__icon" aria-hidden="true"></span>
+                </summary>
+                <div class="research-accordion__body">
+                  <section class="research-detail-section">
+                    <h3>Overview</h3>
+                    <p>
+                     学部時代には、明治大学 総合数理学部 先端メディアサイエンス学科の森勢研究室に所属し、音声処理に関する研究に取り組みました。
+                      特に、声質変換技術を用いた音声において、話者の声質を変換した後も感情情報がどの程度保持されるかに着目しました。
+                     本研究では、Retrieval-based Voice Conversion（RVC）を用いて音声を変換し、変換後の音声に含まれる恐怖感情を聴取者がどの程度認識できるかを主観評価実験により検証しました。
+                    </p>
+                  </section>
+
+                  <section class="research-detail-section">
+                    <h3>Research Topic</h3>
+                    <dl class="research-meta">
+                      <div>
+                        <dt>テーマ</dt>
+                        <dd>恐怖感情の保持に着目した声質変換の評価</dd>
+                      </div>
+                      <div>
+                        <dt>手法</dt>
+                        <dd>RVCを用いて音声の声質変換モデルを作成し、変換前後の音声を用いた主観評価実験を実施しました。
+                          実験では、聴取者に対して音声に含まれる恐怖感情の強度を0〜6の7段階で評価してもらい、変換後も恐怖感情が保持されているかを分析しました。
+                          また、基本周波数（F0）の平均値を算出し、音響的特徴との関係についても考察しました。</dd>
+                      </div>
+                      <div>
+                        <dt>成果</dt>
+                        <dd>実験の結果、RVCによる声質変換後も恐怖感情は一定程度認識可能である一方、変換前と比較して恐怖感情強度が低下する傾向が確認されました。
+                          また、変換先モデルによって感情保持の程度に差があることも分かりました。これにより、声質変換技術を実用的に利用する際には、音声の自然性や明瞭度だけでなく、
+                          感情情報の保持も重要であることを示しました。</dd>
+                      </div>
+                    </dl>
+                    <div class="research-cta">
+                      <a class="detail-button" href="assets/2025年度卒論-森勢研究室-山井航.pdf" target="_blank" rel="noopener noreferrer">
+                        論文PDFを開く
+                      </a>
+                    </div>
+                  </section>
+
+                  <section class="research-detail-section">
+                    <h3>Keywords</h3>
+                    <p class="tag-list" aria-label="学部時代の研究キーワード">
+                      <span>Speech Processing</span>
+                      <span>Voice Conversion</span>
+                      <span>RVC</span>
+                      <span>Speech Emotion</span>
+                      <span>Signal Processing</span>
+                      <span>Data Analysis</span>
+                    </p>
+                  </section>
+
+                  <section class="research-detail-section">
+                    <h3>Presentations</h3>
+                    <ul>
+                      <li>
+                        卒業論文が共著者として音響学会に発表予定（詳細は未だ不明） 
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </details>
+
+              <details class="research-accordion" id="graduate-research">
+                <summary>
+                  <span>
+                    <span class="research-accordion__label">Graduate Research</span>
+                    <span class="research-accordion__title">大学院時代の研究</span>
+                  </span>
+                  <span class="research-accordion__icon" aria-hidden="true"></span>
+                </summary>
+                <div class="research-accordion__body">
+                  <section class="research-detail-section">
+                    <h3>Overview</h3>
+                    <p>
+                      私は、エッジデバイス上で AI を高速に動作させるための
+                      「エッジ AI の推論高速化」に関する研究に取り組んでいます。
+                      特に、画像分類や物体検出などの画像・映像処理を対象として、
+                      限られた計算資源の中で AI モデルを効率良く実行することを目指しています。
+                    </p>
+                    <p>
+                      本研究では、FPGA を搭載したエッジデバイスを用いて、
+                      AI 推論処理の高速化に取り組んでいます。FPGA は、処理内容に応じて
+                      回路構成を変更できる特徴を持つため、特定の処理に合わせた高効率な計算が可能です。
+                    </p>
+                    <p>
+                      AI 推論処理を FPGA 上の専用演算器で実行し、前処理・推論処理・後処理からなる
+                      処理全体の流れを分析しながら、ソフトウェアとハードウェアの両面から
+                      性能向上を検討しています。
+                    </p>
+                  </section>
+
+                  <section class="research-detail-section">
+                    <h3>Research Topic</h3>
+                    <h4>研究背景</h4>
+                    <p>
+                      近年、AI 技術は自動車、ロボット、監視カメラ、スマートファクトリー、
+                      IoT 機器など、さまざまな分野で活用が進んでいます。従来はクラウド上の
+                      高性能なサーバで AI 処理を行うことが一般的でしたが、今後は端末側で
+                      AI 処理を行うエッジ AI の重要性が高まると考えられます。
+                    </p>
+                    <p>
+                      エッジ AI では、データをクラウドに送信せずに端末側で処理できるため、
+                      低遅延化、通信量の削減、プライバシー保護、リアルタイム性の向上といった
+                      利点があります。一方で、エッジデバイスはクラウドサーバと比べて、
+                      計算能力、メモリ容量、消費電力に制約があります。
+                    </p>
+
+                    <h4>研究課題</h4>
+                    <p>
+                      エッジ AI の実装における課題は、限られた計算資源の中で、
+                      AI 推論を高速かつ安定して実行することです。特に画像・映像処理では、
+                      推論処理だけでなく、入力画像のリサイズ、正規化、データ形式変換などの前処理や、
+                      推論結果の整理・判定を行う後処理も必要になります。
+                    </p>
+                    <p>
+                      そのため、モデルの推論時間だけでなく、前処理、推論処理、後処理を含めた
+                      システム全体の実行時間を考慮する必要があります。FPGA 上の専用演算器で
+                      推論処理を高速化できたとしても、CPU 側で行う前処理が遅い場合、
+                      システム全体の高速化にはつながりません。
+                    </p>
+
+                    <h4>研究目的</h4>
+                    <p>
+                      本研究の目的は、FPGA 搭載エッジデバイス上で画像・映像向け AI モデルを
+                      効率良く動作させ、エッジ AI 推論の高速化を実現することです。
+                      AI 推論処理を専用ハードウェアである DPU により高速化するとともに、
+                      CPU 側で行われる前処理や後処理についても、並列処理やパイプライン処理を用いて
+                      効率化することを目指しています。
+                    </p>
+                    <p>
+                      各処理段階の実行時間を測定し、システム全体の中でどの部分が処理時間に
+                      大きく影響しているのかを分析します。最終的には、限られた計算資源しか持たない
+                      エッジデバイス上でも、AI をリアルタイムに近い形で実行できるようにすることを
+                      目標としています。
+                    </p>
+
+                    <h4>使用した実験環境・技術</h4>
+                    <p>
+                      本研究では、FPGA 搭載エッジデバイスとして AMD/Xilinx Kria KV260
+                      Vision AI Starter Kit を使用しています。KV260 には ARM Cortex-A53 CPU と
+                      FPGA 領域が搭載されており、ソフトウェア処理とハードウェア処理を組み合わせた
+                      AI 推論環境を構築できます。
+                    </p>
+                    <p>
+                      AI 推論の実行には AMD/Xilinx が提供する Vitis AI を利用しています。
+                      Vitis AI は、学習済み AI モデルの量子化、コンパイル、DPU 上での推論実行を
+                      支援する開発環境です。DPU は Deep-learning Processing Unit の略で、
+                      FPGA 上に構成される AI 推論向けの専用演算器です。
+                    </p>
+                    <p>
+                      ResNet-50 などの画像分類モデルを対象に、Vitis AI を用いて DPU 上で推論を実行し、
+                      CPU 側で行う前処理・後処理と組み合わせた推論パイプラインを構築しています。
+                      また、VART（Vitis AI Runtime）を用いて C++ プログラムから DPU を制御し、
+                      推論処理の実行時間やシステム全体の処理性能を評価しています。
+                    </p>
+                    <dl class="research-meta">
+                      <div>
+                        <dt>テーマ</dt>
+                        <dd>FPGA 搭載エッジデバイスにおけるエッジ AI 推論の高速化</dd>
+                      </div>
+                      <div>
+                        <dt>対象</dt>
+                        <dd>画像分類、物体検出などの画像・映像処理向け AI モデル</dd>
+                      </div>
+                      <div>
+                        <dt>評価</dt>
+                        <dd>前処理、推論処理、後処理を含めた実行時間とスループット</dd>
+                      </div>
+                    </dl>
+                  </section>
+
+                  <section class="research-detail-section">
+                    <h3>Keywords</h3>
+                    <p class="tag-list" aria-label="大学院時代の研究キーワード">
+                      <span>Edge AI</span>
+                      <span>FPGA</span>
+                      <span>Kria KV260</span>
+                      <span>Vitis AI</span>
+                      <span>DPU</span>
+                      <span>VART</span>
+                      <span>C / C++</span>
+                      <span>OpenCV</span>
+                      <span>ResNet-50</span>
+                      <span>ImageNet</span>
+                      <span>Pipeline Processing</span>
+                      <span>Parallel Processing</span>
+                      <span>Throughput Evaluation</span>
+                    </p>
+                  </section>
+
+                  <section class="research-detail-section">
+                    <h3>Publications</h3>
+                    <ul>
+                      <li>現在準備中です。</li>
+                    </ul>
+                  </section>
+
+                  <section class="research-detail-section">
+                    <h3>Presentations</h3>
+                    <ul>
+                      <li>現在準備中です。</li>
+                    </ul>
+                  </section>
+                </div>
+              </details>
+            </div>
+          </section>
+        </article>
+
+        <footer class="site-footer">
+          <p>© 2026 MyHomepage. Built as a static website.</p>
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

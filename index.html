@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Me | MyHomepage</title>
+    <meta
+      name="description"
+      content="プロフィール、経歴、スキル、研究内容をまとめた個人ホームページです。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-sidebar" id="site-header">
+        <a class="brand" href="index.html" aria-label="About Me">
+          <img class="avatar" src="assets/avatar.svg" alt="" />
+          <span class="brand__name">山井　航</span>
+          <span class="brand__note">About Me / Research / Projects</span>
+        </a>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">メニューを開閉</span>
+        </button>
+
+        <nav class="global-nav" id="global-nav" aria-label="メインメニュー">
+          <a class="nav-link is-active" href="index.html" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">◎</span>
+            <span>About Me</span>
+          </a>
+          <a class="nav-link" href="research.html">
+            <span class="nav-icon" aria-hidden="true">△</span>
+            <span>Research</span>
+          </a>
+          <a class="nav-link" href="projects.html">
+            <span class="nav-icon" aria-hidden="true">◇</span>
+            <span>My Project</span>
+          </a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+          <span>Dark</span>
+        </button>
+      </header>
+
+      <main class="main-content" id="top">
+        <article class="page-panel">
+          <header class="page-title">
+            <p class="eyebrow">About Me</p>
+            <h1>プロフィール・経歴・スキル</h1>
+            <p>
+              研究内容は <a href="research.html">Research</a>、作品一覧は
+              <a href="projects.html">My Project</a> にまとめています。
+            </p>
+          </header>
+
+          <section id="profile" class="section-block">
+            <div class="section-heading">
+              <span class="section-number">01</span>
+              <h2>Who am I?</h2>
+            </div>
+            <ul>
+              <li>
+                山井　航（Yamai Ko）
+                <ul>
+                  <li>所属：明治大学大学院 / 吉田明正研究室</li>
+                  <li>専門：並列処理、エッジAI推論高速化</li>
+                </ul>
+              </li>
+              <li>興味のあること：フィジカルAI、エッジAI、ゲーム、カメラ（最近）、旅行</li>
+            </ul>
+          </section>
+
+          <section id="career" class="section-block">
+            <div class="section-heading">
+              <span class="section-number">02</span>
+              <h2>Career</h2>
+            </div>
+            <ol class="timeline">
+              <li>
+                <time datetime="2026-04">2026-04</time>
+                <span>明治大学院　先端数理科学研究科　ネットワークデザイン専攻　入学</span>
+              </li>
+              <li>
+                <time datetime="2026-03">2026-03</time>
+                <span>明治大学　総合数理学部　先端メディアサイエンス学科　卒業</span>
+              </li>
+              <li>
+                <time datetime="2022-4">2022-04</time>
+                <span>明治大学　総合数理学部　先端メディアサイエンス学科　入学</span>
+              </li>
+              <li>
+                <time datetime="2022-03">2022-03</time>
+                <span>千葉県立船橋啓明高等学校　卒業</span>
+              </li>
+              <li>
+                <time datetime="2019-04">2019-04</time>
+                <span>千葉県立船橋啓明高等学校　入学</span>
+              </li>
+            </ol>
+          </section>
+
+          <section id="skills" class="section-block">
+            <div class="section-heading">
+              <span class="section-number">03</span>
+              <h2>Skills</h2>
+            </div>
+
+            <div class="skill-list">
+              <article class="skill-group">
+                <h3>Programming Language</h3>
+                <p class="tag-list" aria-label="経験したことのあるプログラミング言語">
+                  <span>C</span>
+                  <span>C++</span>
+                  <span>Python</span>
+                  <span>JavaScript</span>
+                  <span>バイブコーディング</span>
+                </p>
+              </article>
+
+              <article class="skill-group">
+                <h3>色々</h3>
+                <p class="tag-list" aria-label="経験したことのあるツールやフレームワーク">
+                  <span>Git</span>
+                  <span>Git Hub</span>
+                  <span>PyTorch</span>
+                  <span>Docker</span>
+                  <span>Linux</span>
+                  <span>Unreal Engine</span>
+                  <span>Vitis AI</span>
+                  <span>FPGA</span>
+                </p>
+              </article>
+
+              <article class="skill-group">
+                <h3>コンテスト関連</h3>
+                <ul class="compact-list">
+                  <li>At Coder：茶色</li>
+                  <li>Kaggle：挑戦中</li>
+                </ul>
+              </article>
+
+              <article class="skill-group">
+                <h3>Certifications</h3>
+                <ul class="compact-list">
+                  <li>基本情報技術者試験（2023年 春取得）</li>
+                  <li>普通自動車免許</li>
+                  <li>TOEIC：845点（2025年 3月取得）</li>
+                </ul>
+              </article>
+
+              <article class="skill-group">
+                <h3>Language</h3>
+                <ul class="compact-list">
+                  <li>日本語：母語</li>
+                  <li>英語：簡単な会話なら可能（リスリングに問題あり）</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section id="research" class="section-block">
+            <div class="section-heading">
+              <span class="section-number">04</span>
+              <h2>Research Summary</h2>
+            </div>
+
+            <h3>研究内容</h3>
+            <ul>
+              <li>〇〇における信号処理・機械学習の応用</li>
+              <li>人の知覚や評価に基づく〇〇システムの設計</li>
+              <li>実験用データセット構築と評価手法の検討</li>
+            </ul>
+            <p>
+              詳細なテーマ、キーワード、論文、学会発表は
+              <a class="text-button" href="research.html">Research ページへ</a>
+              移動して確認できます。
+            </p>
+          </section>
+
+          <section id="hobby" class="section-block">
+            <div class="section-heading">
+              <span class="section-number">04</span>
+              <h2>My Hobbyies</h2>
+            </div>
+            旅行か人に合うことです。
+            旅行をより楽しむためにカメラを趣味にしようと考え中。
+            写真をのせるレベルになりたい..
+            </p>
+          </section>
+
+          <section id="presentations" class="section-block">
+            <div class="section-heading">
+              <span class="section-number">05</span>
+              <h2>Presentations</h2>
+            </div>
+
+            <h3>2026</h3>
+            <ul>
+              <li>
+              9月のFITで発表予定。
+              </li>
+              <li>
+              卒業論文が共著者として音響学会に発表予定（詳細は未だ不明）
+              </li>
+            </ul>
+          </section>
+
+          <section id="contact" class="section-block">
+            <div class="section-heading">
+              <span class="section-number">06</span>
+              <h2>Contact</h2>
+            </div>
+            <ul>
+              <li>Google Mail: <a href="mailto:your-name@example.com">voyager.ko.1523@gmail.com</a></li>
+              <li>School Mail: <a href="mailto:your-name@example.com">cs263027@meiji.ac.jp</a></li>
+              <li>GitHub: <a href="#">https://github.com/voyager-ko</a></li>
+            </ul>
+          </section>
+        </article>
+
+        <footer class="site-footer">
+          <p>© 2026 MyHomepage. Built as a static website.</p>
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
