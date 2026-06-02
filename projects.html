@@ -13,7 +13,7 @@
         <a class="brand" href="index.html" aria-label="About Me">
           <img class="avatar" src="assets/avatar.svg" alt="" />
           <span class="brand__name">山井　航</span>
-          <span class="brand__note">About Me / Research / Projects</span>
+          <span class="brand__note">About Me / Research / Projects / Tech</span>
         </a>
 
         <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">
@@ -33,6 +33,10 @@
           <a class="nav-link is-active" href="projects.html" aria-current="page">
             <span class="nav-icon" aria-hidden="true">◇</span>
             <span>My Project</span>
+          </a>
+          <a class="nav-link" href="tech.html">
+            <span class="nav-icon" aria-hidden="true">#</span>
+            <span>Tech Notes</span>
           </a>
         </nav>
 
@@ -67,10 +71,18 @@
 
               <article class="project-row">
                 <div>
-                  <h3>Realtime Echo Processing</h3>
+                  <h3>Realtime Echo Processing（Play Asio）</h3>
                   <p>PlayAsioは，ASIO4ALLを用いてリアルタイム音声入出力を行い，入力音声にエコー処理を加えて出力するC/C++プロジェクトです。</p>
                 </div>
                 <a class="detail-button" href="#research-tool">詳細を見る</a>
+              </article>
+
+              <article class="project-row">
+                <div>
+                  <h3>Scattered-car</h3>
+                  <p>画面をクリックすることで画面上にいる車が分解し数秒後に元の形に形成されます。</p>
+                </div>
+                <a class="detail-button" href="#scattered-car">詳細を見る</a>
               </article>
             </div>
           </section>
@@ -94,6 +106,9 @@
                 <span>JavaScript</span>
                 <span>claude code</span>
               </p>
+              <div class="project-actions">
+                <a class="detail-button" href="https://github.com/your-name/reinforcement-learning-3d" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
             </article>
 
             <article class="project-detail" id="research-tool">
@@ -103,10 +118,42 @@
                 実験データの整理、簡単な集計、グラフ化を補助する研究用ツールです。
                 作業の再現性を高めるため、入力データから出力までの流れを明確にしています。
               </p>
+              <div class="project-audio">
+                <span>Echo processing result</span>
+                <audio controls preload="metadata">
+                  <source src="assets/EchoSound.wav" type="audio/wav" />
+                  Your browser does not support the audio tag.
+                </audio>
+              </div>
               <p class="tag-list">
                 <span>C/C++</span>
                 <span>ASIO</span>
               </p>
+              <div class="project-actions">
+                <a class="detail-button" href="https://github.com/your-name/realtime-echo-processing" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-detail" id="scattered-car">
+              <p class="project-kicker"></p>
+              <h3>Scattered-car</h3>
+              <p>
+                学校のCG基礎の授業課題で作成した作品です。
+              </p>
+              <div class="project-media">
+                <video controls muted loop playsinline preload="metadata">
+                  <source src="assets/car.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <p class="tag-list">
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>シェーダー</span>
+              </p>
+              <div class="project-actions">
+                <a class="detail-button" href="https://github.com/your-name/scattered-car" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
             </article>
 
           </section>
@@ -121,3 +168,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+

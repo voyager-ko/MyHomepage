@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tech Notes | MyHomepage</title>
+    <meta name="description" content="経験してきた技術や実装メモをまとめるページです。" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-sidebar" id="site-header">
+        <a class="brand" href="index.html" aria-label="About Me">
+          <img class="avatar" src="assets/avatar.svg" alt="" />
+          <span class="brand__name">山井　航</span>
+          <span class="brand__note">About Me / Research / Projects / Tech</span>
+        </a>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">メニューを開閉</span>
+        </button>
+
+        <nav class="global-nav" id="global-nav" aria-label="メインメニュー">
+          <a class="nav-link" href="index.html">
+            <span class="nav-icon" aria-hidden="true">◎</span>
+            <span>About Me</span>
+          </a>
+          <a class="nav-link" href="research.html">
+            <span class="nav-icon" aria-hidden="true">△</span>
+            <span>Research</span>
+          </a>
+          <a class="nav-link" href="projects.html">
+            <span class="nav-icon" aria-hidden="true">◇</span>
+            <span>My Project</span>
+          </a>
+          <a class="nav-link is-active" href="tech.html" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">#</span>
+            <span>Tech Notes</span>
+          </a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+          <span>Dark</span>
+        </button>
+      </header>
+
+      <main class="main-content" id="top">
+        <article class="page-panel">
+          <header class="page-title">
+            <p class="eyebrow">Tech Notes</p>
+            <h1>技術メモ</h1>
+            <p>
+              実装で得た知見、環境構築、ライブラリの使い方などをまとめるページです。
+              各ブロックを開くと、概要より詳しいメモを確認できます。
+            </p>
+          </header>
+
+          <section class="section-block">
+            <div class="section-heading">
+              <span class="section-number">List</span>
+              <h2>Technical Topics</h2>
+            </div>
+
+            <div class="research-accordion-list tech-note-list">
+              <details class="research-accordion tech-note" id="pytorch-implementation">
+                <summary>
+                  <span class="tech-note__summary">
+                    <span class="research-accordion__label">開発中</span>
+                    <span class="research-accordion__title">開発中</span>
+                    <span class="tech-note__description">
+                      開発中
+                    </span>
+                    <span class="tag-list tech-note__tags" aria-label="PyTorch implementation keywords">
+                      <span>PyTorch</span>
+                    </span>
+                  </span>
+                  <span class="research-accordion__icon" aria-hidden="true"></span>
+                </summary>
+                <div class="research-accordion__body">
+                  <section class="research-detail-section">
+                    <h3>Overview</h3>
+                    <p>
+                      Kaihatucyuu
+                    </p>
+                  </section>
+                  <section class="research-detail-section">
+                    <h3>Implementation Notes</h3>
+                    <ul class="compact-list">
+                      <li></li>
+                    </ul>
+                  </section>
+                </div>
+              </details>
+
+              
+            </div>
+          </section>
+        </article>
+
+        <footer class="site-footer">
+          <p>© 2026 MyHomepage. Built as a static website.</p>
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
