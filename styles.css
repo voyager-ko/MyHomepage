@@ -21,7 +21,7 @@
   --surface: #252b33;
   --surface-soft: #20262d;
   --text: #f2f5f7;
-  --muted: #acb6c2;
+  --muted: #d5dde6;
   --border: #3a444f;
   --border-strong: #526170;
   --accent: #8dbbd5;
@@ -76,7 +76,7 @@ img {
 .site-shell {
   display: grid;
   grid-template-columns: clamp(200px, 22vw, 252px) minmax(0, 1fr);
-  gap: clamp(24px, 4vw, 48px);
+  gap: clamp(72px, 7vw, 140px);
   width: min(1240px, calc(100% - clamp(32px, 6vw, 96px)));
   margin: 0 auto 0 clamp(16px, 3vw, 48px);
   padding: 36px 0 28px;
@@ -104,9 +104,10 @@ img {
 }
 
 .avatar {
-  width: 118px;
-  height: 118px;
+  width: 148px;
+  height: 148px;
   border-radius: 50%;
+  object-fit: cover;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
@@ -398,10 +399,6 @@ li + li {
 
 .compact-list {
   margin-bottom: 0;
-}
-
-.compact-list li {
-  color: var(--muted);
 }
 
 .text-button {
@@ -708,6 +705,105 @@ li + li {
   background: #000;
 }
 
+.maze-comparison {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  margin: 18px 0 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-soft);
+}
+
+.maze-comparison figure {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  min-width: 0;
+}
+
+.maze-comparison img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  cursor: zoom-in;
+}
+
+.maze-comparison figcaption {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 750;
+  text-align: center;
+}
+
+.maze-comparison__arrow {
+  color: var(--accent);
+  font-size: 1.8rem;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  place-items: center;
+  padding: 28px;
+  background: rgba(8, 12, 17, 0.78);
+}
+
+.image-lightbox.is-open {
+  display: grid;
+}
+
+.image-lightbox__content {
+  display: grid;
+  gap: 12px;
+  width: min(1120px, 100%);
+  max-height: calc(100vh - 56px);
+}
+
+.image-lightbox__image {
+  display: block;
+  width: 100%;
+  max-height: calc(100vh - 120px);
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+}
+
+.image-lightbox__caption {
+  margin: 0;
+  color: #f2f5f7;
+  font-weight: 750;
+  text-align: center;
+}
+
+.image-lightbox__close {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 8px;
+  background: rgba(20, 26, 33, 0.82);
+  color: #f2f5f7;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
 .project-audio {
   display: grid;
   gap: 10px;
@@ -777,7 +873,7 @@ li + li {
   }
 
   .brand {
-    grid-template-columns: 76px minmax(0, 1fr);
+    grid-template-columns: 86px minmax(0, 1fr);
     justify-items: start;
     align-items: center;
     text-align: left;
@@ -785,8 +881,8 @@ li + li {
 
   .avatar {
     grid-row: span 2;
-    width: 76px;
-    height: 76px;
+    width: 86px;
+    height: 86px;
   }
 
   .brand__name {
@@ -865,5 +961,14 @@ li + li {
 
   .detail-button {
     justify-self: start;
+  }
+
+  .maze-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .maze-comparison__arrow {
+    justify-self: center;
+    transform: rotate(90deg);
   }
 }

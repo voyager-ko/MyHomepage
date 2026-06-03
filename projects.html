@@ -11,7 +11,7 @@
     <div class="site-shell">
       <header class="site-sidebar" id="site-header">
         <a class="brand" href="index.html" aria-label="About Me">
-          <img class="avatar" src="assets/avatar.svg" alt="" />
+          <img class="avatar" src="assets/myface.jpg" alt="" />
           <span class="brand__name">山井　航</span>
           <span class="brand__note">About Me / Research / Projects / Tech</span>
         </a>
@@ -95,11 +95,41 @@
 
             <article class="project-detail" id="portfolio-website">
               <p class="project-kicker"></p>
-              <h3>Reinforcement Learning in 3D</h3>
+              <h1>Reinforcement Learning in 3D</h1>
+              <h4>動機</h4>
+              <p>YouTubeを見ていると強化学習の実装例としてロボットが道を学習させる動画が多数あります。その仕組みを知りたいと思い実装しました。</p>
+              <h4>概要</h4>
               <p>
-                経歴、研究内容、学会発表、制作物をまとめるためのホームページです。
-                プレーンな HTML/CSS/JavaScript で構成し、軽く読みやすいページを目指しています。
+               簡易的な強化学習をJavaScriptのthree.jsを用いて作成しました。
               </p>
+              <p>ロボットはスタート地点からゴールまで道を外れずに走り切ることを目標に、
+                試行錯誤を繰り返しながら自律的に走り方を習得します。複数台のロボットが同じQテーブルを共有することで、
+                並列学習による高速化にも対応しています。</p>
+
+                <h4>実際の画面</h4>
+                <p>パラメータを変更しながら学習を行う流れを確認することができます。
+                試行回数が2000回程度になると道の学習が可能となっています。</p>
+                <div class="project-media">
+                  <video controls muted loop playsinline preload="metadata" data-force-muted>
+                    <source src="assets/Reinforcemet Movie.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+                <h4>道路の作成</h4>
+                <p>自分で道路を作成することが可能です。</p>
+                <div class="maze-comparison" aria-label="道路作成パネルから作成した道路への変化">
+                  <figure>
+                    <img src="assets/Maze write.png" alt="道路作成パネル" />
+                    <figcaption>道路作成パネル</figcaption>
+                  </figure>
+                  <span class="maze-comparison__arrow" aria-hidden="true">→</span>
+                  <figure>
+                    <img src="assets/Maze.png" alt="作成した道路" />
+                    <figcaption>作成した道路</figcaption>
+                  </figure>
+                </div>
+
               <p class="tag-list">
                 <span>HTML</span>
                 <span>CSS</span>
@@ -107,16 +137,20 @@
                 <span>claude code</span>
               </p>
               <div class="project-actions">
-                <a class="detail-button" href="https://github.com/your-name/reinforcement-learning-3d" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="detail-button" href="https://github.com/voyager-ko/Reinforcement-learning-in-3D" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </article>
 
             <article class="project-detail" id="research-tool">
               <p class="project-kicker"></p>
-              <h3>Realtime Echo Processing</h3>
+              <h1>Realtime Echo Processing</h1>
+              <h4>動機</h4>
+              リアルタイム処理の大変さを経験してみたかった。
+              <h4>概要</h4>
               <p>
-                実験データの整理、簡単な集計、グラフ化を補助する研究用ツールです。
-                作業の再現性を高めるため、入力データから出力までの流れを明確にしています。
+                ASIO4ALLを用いてリアルタイム音声入出力を行い、入力音声にエコー処理を加えて出力するC/C++プロジェクトです。
+                本プロジェクトでは、低遅延な音声処理を実現するためにASIOドライバを利用し、
+                マイクなどから取得した音声データに対してリアルタイムでエコー処理を行います。
               </p>
               <div class="project-audio">
                 <span>Echo processing result</span>
@@ -130,13 +164,13 @@
                 <span>ASIO</span>
               </p>
               <div class="project-actions">
-                <a class="detail-button" href="https://github.com/your-name/realtime-echo-processing" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="detail-button" href="https://github.com/voyager-ko/PlayAsio" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </article>
 
             <article class="project-detail" id="scattered-car">
               <p class="project-kicker"></p>
-              <h3>Scattered-car</h3>
+              <h1>Scattered-car</h1>
               <p>
                 学校のCG基礎の授業課題で作成した作品です。
               </p>
@@ -152,7 +186,7 @@
                 <span>シェーダー</span>
               </p>
               <div class="project-actions">
-                <a class="detail-button" href="https://github.com/your-name/scattered-car" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="detail-button" href="https://github.com/voyager-ko/Scattered-car" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </article>
 
@@ -165,7 +199,7 @@
       </main>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
   </body>
 </html>
 
