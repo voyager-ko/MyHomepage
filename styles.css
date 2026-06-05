@@ -104,8 +104,8 @@ img {
 }
 
 .avatar {
-  width: 148px;
-  height: 148px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   background: var(--surface);
